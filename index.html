@@ -1,0 +1,267 @@
+<!-- Prototype website -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype Website</title>
+    <!-- Website title -->
+    <!-- Styling links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-feather-alt"></i> Wildlife</a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#photos">Photos</a>
+        <a href="#animal">Animal</a>
+        <a href="#membership">Membership</a>
+        <a href="#FAQ">FAQ</a>
+      </nav>
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+    </header>
+    <!-- Homepage section-->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Wildlife</h3>
+        <p>Our goal is to help protect wildlife and nature</p>
+        <p>Help us by joining us and become a member today</p>
+        <br />
+        <br />
+        <br />
+        <h4>Membership Benefits:</h4>
+        <br />
+        <li>Photos of wildlife animals</li>
+        <li>Monthly Newsletter</li>
+        <li>Certificate of wildlife adoption</li>
+        <br />
+        <br />
+        <br />
+        <a href="#membership" class="btn">Membership Registration</a>
+        <a href="#photos" class="btn">Volunteering Opportunities</a>
+        <a href="#FAQ" class="btn">FAQ</a>
+      </div>
+    </section>
+
+    <!--About Us section -->
+
+    <section class="about" id="about">
+      <h2 class="deco-title">Who are we?</h2>
+      <div class="box-container">
+        <div class="image">
+          <img src="Images/Red-squirrel.jpg" alt="" />
+        </div>
+
+        <div class="content">
+          <h3 class="title">Our Core Values</h3>
+          <p>Our mission is to help protect nature</p>
+          <p>
+            We rely on Volunteers, Donations and Our memberships to help us
+            succeed.
+          </p>
+          <br />
+          <p>Our goals are:</p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-tree"></i>
+              <h3>Connecting people with Nature</h3>
+            </div>
+
+            <div class="icons">
+              <i class="fas fa-seedling"></i>
+              <h3>Caring For Landscapes</h3>
+            </div>
+
+            <div class="icons">
+              <i class="fas fa-crow"></i>
+              <h3>Protecting Wildlife</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteering photo section -->
+
+    <section class="photos" id="photos">
+      <h2 class="Heading">Photos of Our volunteering</h2>
+      <div class="swiper photos-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="Images/Planting1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="Images/Planting2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="Images/Planting3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="Images/Butterfly.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- Animal section -->
+
+    <section class="animal" id="animal">
+      <h2 class="heading">Our Animals</h2>
+      <h3>Find out how you can help care for your favourite furry friend</h3>
+      <div class="box-container">
+        <div class="box">
+          <img src="Images/fox.jpg" alt="" />
+          <div class="content">
+            <h3>Fox</h3>
+            <a href="#" class="btn">See details</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/Badger.jpg" alt="" />
+          <div class="content">
+            <h3>Badger</h3>
+            <a href="#" class="btn">See details</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/Hedgehog.jpg" alt="" />
+          <div class="content">
+            <h3>Hedgehog</h3>
+            <a href="#" class="btn">See details</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/Owl-2.jpg" alt="" />
+          <div class="content">
+            <h3>Owl</h3>
+            <a href="#" class="btn">See details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership section -->
+
+    <section class="membership" id="membership">
+      <h2 class="heading">Become a member today!</h2>
+      <h3>Receive updates and enjoy wildlife goodies throughout the year</h3>
+
+      <form action="membership-form">
+        <div class="inputBox">
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Surname" />
+        </div>
+
+        <div class="inputBox">
+          <input type="number" placeholder="phone number" />
+          <input type="email" placeholder="Email" />
+        </div>
+
+        <a href="#" class="btn">Become a member</a>
+      </form>
+    </section>
+
+    <!--FAQ section -->
+
+    <section class="FAQ" id="FAQ">
+      <h2>FAQ</h2>
+      <div class="faq-question">
+        <div class="question">Membership Tiers</div>
+        <br />
+        <div class="answer">We offer two membership tiers</div>
+        <br />
+        <br />
+        <br />
+        <p>Gold</p>
+        <br />
+        <li>Cost: £20</li>
+        <li>Annual membership</li>
+        <li>Welcome Email</li>
+        <li>Adoption certificate</li>
+        <li>Monthly Newsletter</li>
+        <br />
+        <br />
+        <br />
+        <p>Silver</p>
+        <br />
+        <li>Cost: £15</li>
+        <li>6 month membership</li>
+        <li>Welcome Email</li>
+        <li>Adoption certificate</li>
+        <li>Monthly Newsletter</li>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Office opening hours</h3>
+          <p class="links"><i class="fas fa-calendar"></i>Monday - Friday</p>
+          <p class="links"><i class="fas fa-clock"></i> 9am - 6pm</p>
+        </div>
+        <div class="box">
+          <h3>membership Info</h3>
+          <a href="#" class="links"><i class="fas fa-phone"></i>+00 000 0000</a>
+          <a href="#" class="links"
+            ><i class="fas fa-envelope"></i>prototype@wildlife.com</a
+          >
+          <a href="#" class="links"
+            ><i class="fas fa-map"></i>16 Wildlife Road AA00 0AA</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>Newsletter</h3>
+          <p>Subscribe for latest updates</p>
+          <input type="email" placeholder="Your Email" class="email" />
+          <a href="#" class="btn">Subscribe</a>
+
+          <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-tiktok"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="credit">&copy; Gabriella Cooper</div>
+    </section>
+
+    <!-- JavaScript file link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

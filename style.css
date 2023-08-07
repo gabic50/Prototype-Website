@@ -1,0 +1,638 @@
+/*CSS file for the prototype website */
+* {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+/* General design of the webpage */
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrolling-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 5rem;
+}
+
+.btn {
+  font-size: 1.7rem;
+  display: inline-block;
+  background: orange;
+  color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  margin-top: 1rem;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #ff9748;
+  z-index: -1;
+  transition: 0.3s linear;
+  left: 0;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+section {
+  padding: 8rem 7%;
+}
+
+/*Heading design */
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: orange;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: orange;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: black;
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+  color: orange;
+}
+
+#menu-btn {
+  display: none;
+}
+
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  cursor: pointer;
+  color: black;
+}
+
+.header .icons div:hover {
+  color: orange;
+}
+
+/* home section design */
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(Images/background\ home\ section.JPG) no-repeat;
+  background-size: cover;
+}
+
+.home .content {
+  max-width: 60rem;
+  text-align: center;
+}
+
+.home .content h3 {
+  color: black;
+  font-size: 10rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.home .content p {
+  color: black;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.home .content h4 {
+  color: black;
+  font-size: 3rem;
+  line-height: 1.4;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.home .content li {
+  color: black;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.home .content h5 {
+  color: black;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.home .fox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.home .bird {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* About us section design */
+.about .deco-title {
+  font-size: 10rem;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 0.5;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px orange;
+  top: 115%;
+  left: 48%;
+  text-align: center;
+  position: absolute;
+}
+
+.about .box-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.about .box-container .image {
+  flex: 1 1 31rem;
+}
+
+.about .box-container .image img {
+  width: 100%;
+}
+
+.about .content {
+  flex: 1 1 41rem;
+}
+
+.about .content .title {
+  font-size: 4rem;
+  color: black;
+  padding: 1rem 0;
+  line-height: 2;
+  text-align: center;
+}
+
+.about .content p {
+  font-size: 1.7rem;
+  color: black;
+  text-align: center;
+}
+
+.about .content .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.about .content .icons-container .icons {
+  flex: 1 1 16rem;
+  text-align: center;
+  background: rgb(233, 242, 219);
+  padding: 3rem 2rem;
+  border-radius: 4rem;
+}
+
+.about .content .icons-container .icons .fas {
+  height: 5rem;
+  font-size: 4rem;
+  color: orange;
+}
+
+.about .content .icons-container .icons .h3 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+/* Photo section design */
+.photos {
+  background: rgb(233, 242, 219);
+}
+
+.photos h2 {
+  font-size: 4rem;
+  color: orange;
+  padding: 0.5rem 0;
+  line-height: 1;
+  text-align: center;
+  gap: 2rem;
+}
+
+.animal h3 {
+  font-size: 2rem;
+  color: orange;
+  padding: 0.5rem 0;
+  line-height: 1;
+  text-align: center;
+  gap: 2rem;
+}
+
+.photos .slide .image {
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.photos .slide .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-pervious {
+  color: white;
+}
+
+.animal .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.animal .box-container .box {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.animal .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.animal .box-container .box:hover img {
+  transform: scale(1.1);
+}
+
+.animal .box-container .box .content {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.animal .box-container .box:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.animal .box-container .box .content h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.animal .box-container .box:is(:hover) .content {
+  transform: translate(-20px);
+}
+
+.banner {
+  background: url(Images/background.jpg) no-repeat;
+}
+
+.banner .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.banner .row .content {
+  flex: 1 1 39rem;
+}
+
+.banner .row .content h3 {
+  font-size: 2rem;
+  color: orange;
+  text-transform: uppercase;
+}
+
+.banner .row .content p {
+  font-size: 1.6rem;
+  color: black;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.banner .row .image {
+  flex: 1 1 41rem;
+  margin-bottom: -14rem;
+}
+
+.banner .row .image img {
+  width: 100%;
+}
+
+/*membership section design */
+.membership {
+  background: rgb(233, 242, 219);
+}
+
+.membership h2 {
+  color: orange;
+}
+
+.membership h3 {
+  font-size: 2rem;
+  color: orange;
+  padding: 0.5rem 0;
+  line-height: 1;
+  text-align: center;
+  gap: 2rem;
+}
+
+.membership form {
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.membership form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: #000;
+}
+
+.membership form .inputBox input,
+.membership form textarea {
+  font-size: 1.7rem;
+  width: 49%;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  text-transform: none;
+  border: black;
+}
+
+.membership form .inputBox input::placeholder,
+.membership form textarea::placeholder {
+  text-transform: capitalize;
+}
+
+.membership form textarea {
+  height: 15rem;
+  resize: none;
+  width: 100%;
+  border: #000;
+}
+
+/* FAQ section design */
+.FAQ {
+  padding: 3rem 7%;
+  background: url(Images/background\ home\ section.JPG);
+}
+
+.FAQ h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: orange;
+  text-align: center;
+}
+
+.faq-question {
+  margin-bottom: 4rem;
+}
+
+.question {
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.answer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+li {
+  list-style-type: disc;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.faq-question p {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/*Footer design section */
+.footer {
+  background-color: #686767;
+  background-size: cover;
+  padding: 3rem 7%;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: orange;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+  color: orange;
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .email {
+  width: 100%;
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: white;
+  font-size: 1.6rem;
+  color: black;
+  text-transform: none;
+}
+
+.footer .box-container .box .share a {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  color: black;
+  background: white;
+  font-size: 1.2rem;
+  border-radius: 5rem;
+  margin-right: 0.8rem;
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.footer .box-container .box .share a:hover {
+  background: orange;
+}
+
+.footer .credit {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  color: black;
+  border-top: 0.2rem solid rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive to mobile view */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+  .section {
+    padding: 8rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 0.1rem solid white;
+    display: none;
+  }
+
+  .header .navbar.active {
+    display: block;
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+    font-size: 2rem;
+  }
+
+  .home {
+    background-position: left;
+  }
+
+  .home .content .h3 {
+    font-size: 5rem;
+  }
+
+  .deco-title {
+    display: none;
+  }
+
+  .about .deco-title {
+    top: 90%;
+    left: 50%;
+  }
+
+  .FAQ {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  html {
+    font-size: 4rem;
+  }
+}
